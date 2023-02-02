@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Form
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <%- include('./partials/header.ejs'); %>
+        <h2 class="text-center"> Registration Form </h2>
+        <div class="container">
+            <form method="post" action="/reg-data">
+                <div class="form-group" >
+                    <label> Full Name </label>
+                    <input type="text" class="form-control" name="name"/>
+
+                </div>
+                
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" name="email"/>
+                    
+                </div>
+
+                <div class="form-group">
+                    <label> Password </label>
+                    <input type="password" class="form-control" name="pass"/>
+                    
+                </div>
+
+                <div class="form-group">
+                    <label> Age </label>
+                    <input type="number"  class="form-control" name="age" />
+            
+                    
+                </div>
+
+                <!-- <div class="form-group">
+                    <label> City </label>
+                    <select class="form-control" name="city">
+                        <option> Pune</option>
+                        <option> Noida</option>
+                        <option> Mumbai
+                        </option>
+                        <option>
+                            Banglore
+                        </option>
+                    </select>
+                    
+                </div> -->
+
+              <br>
+
+                <button class="btn btn-success"> Submit</button>
+            </form>
+        </div>
+
+        <%- include('./partials/footer.ejs'); %>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+    </body>
